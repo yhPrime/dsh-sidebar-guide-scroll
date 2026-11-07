@@ -18,6 +18,9 @@ A small DSH plugin that makes the right sidebar's **Start** page scroll when its
 不改 `node_modules` 里的任何第三方包，也不改 DSH 自身；上游升级换了内部哈希类名也不受影响
 （只依赖 `data-sidebar-right-guide` 这个对外标记）。
 
+**相关 / Related:** [`dsh-better-sidebar`](https://github.com/topics/dsh-better-sidebar) 的标签页也注册在右侧栏这一页（新建终端、侧边对话、Git、浏览器、任务管理等），本插件与它**同页协作**，但**不依赖**它——卸掉 better-sidebar 后，原生卡片照样会溢出，修复照样生效。
+Better-sidebar's tabs register on this same page (new terminal, side chat, Git, browser, tasks…). This fix cooperates with that ecosystem but does **not** depend on it: the native cards overflow the same way without it.
+
 ## 安装
 
 在 DSH 里用插件管理安装本目录（`plugin_manager` → `install_bundle`，target 为本目录绝对路径），
