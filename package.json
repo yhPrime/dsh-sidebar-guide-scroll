@@ -1,7 +1,6 @@
 {
   "name": "dsh-sidebar-guide-scroll",
   "version": "0.1.0",
-  "private": true,
   "description": "Make the right sidebar Start page scroll when its tool cards overflow.",
   "type": "module",
   "exports": {
@@ -30,5 +29,25 @@
   },
   "scripts": {
     "test": "node test/check.mjs && node test/client.test.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sidebar",
+    "scroll"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhPrime/dsh-sidebar-guide-scroll.git"
+  },
+  "homepage": "https://github.com/yhPrime/dsh-sidebar-guide-scroll#readme",
+  "bugs": {
+    "url": "https://github.com/yhPrime/dsh-sidebar-guide-scroll/issues"
+  },
+  "author": "yhPrime",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
   }
 }

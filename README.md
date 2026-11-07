@@ -1,5 +1,7 @@
 # dsh-sidebar-guide-scroll
 
+A small DSH plugin that makes the right sidebar's **Start** page scroll when its tool cards overflow, using the theme scrollbar only while it is needed. It never edits DSH or any installed third-party package: the fix targets the stable `data-sidebar-right-guide` marker that the sidebar itself ships.
+
 右侧栏（DSH 原生 right sidebar）的「开始」页把可用工具渲染成一列卡片：文件、代码审查和变更、
 上下文、新建终端、Git、浏览器、任务管理、侧边对话、主题、会话数据诊断…卡片一多就比面板高，
 而这一页没有自己的滚动视口，列表两端被裁掉、滚轮也带不动。
@@ -20,6 +22,23 @@
 
 在 DSH 里用插件管理安装本目录（`plugin_manager` → `install_bundle`，target 为本目录绝对路径），
 然后刷新页面；插件管理里会看到「侧边栏开始页滚动 / Sidebar start page scrolling」。
+
+也可以直接从 GitHub 装进某个 profile：
+
+```bash
+dsh plugin --profile <profile> add git+https://github.com/yhPrime/dsh-sidebar-guide-scroll.git
+```
+
+装完在插件管理里启用它，再刷新页面（客户端插件在页面加载时注册）。
+
+## 卸载
+
+插件管理里关掉或删掉 `dsh-sidebar-guide-scroll` 即可：样式、观察器和内联高度都会随 `ctx.effect`
+的清理函数一起还原，不需要手动清理。
+
+## 许可
+
+MIT，见 [LICENSE](LICENSE)。
 
 ## 文件
 
