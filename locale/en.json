@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Sidebar start page scrolling",
+    "description": "Lets the right sidebar's Start page scroll when its tool cards overflow, using the theme scrollbar only while it is needed."
+  }
+}
